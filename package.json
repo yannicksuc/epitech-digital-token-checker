@@ -1,23 +1,34 @@
 {
-  "name": "epitech-digital-token-checker",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "msal-react-quickstart",
+  "version": "0.1.0",
+  "description": "A React single-page application calling Microsoft Graph API using MSAL.js (w/ AAD v2 endpoint)",
+  "private": true,
+  "dependencies": {
+    "@azure/msal-browser": "^2.21.0",
+    "@azure/msal-react": "^1.2.0",
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.3.0",
+    "react-dom": "^17.0.0",
+    "react-scripts": "^4.0.2",
+    "sass": "^1.49.7"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yannicksuc/epitech-digital-token-checker.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yannicksuc/epitech-digital-token-checker/issues"
-  },
-  "homepage": "https://github.com/yannicksuc/epitech-digital-token-checker#readme",
-  "devDependencies": {
-    "node-schedule": "^2.1.0"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
