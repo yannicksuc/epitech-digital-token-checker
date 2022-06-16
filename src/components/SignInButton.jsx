@@ -16,7 +16,6 @@ export const SignInButton = () => {
                 const credential = OAuthProvider.credentialFromResult(result);
                 const accessToken = credential.accessToken;
                 const idToken = credential.idToken;
-                console.log(accessToken, idToken)
             })
             .catch((error) => {
                 console.log(error)

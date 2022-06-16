@@ -19,7 +19,6 @@ import {getAuth} from "firebase/auth";
 export const PageLayout = (props) => {
     const [user, loading, error] = useAuthState(getAuth());
     function isAuthenticated() {
-        console.log(user);
         return false;
     }
 
