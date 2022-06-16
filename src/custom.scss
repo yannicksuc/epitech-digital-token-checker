@@ -4,5 +4,15 @@ $theme-colors: (
   "danger": #ff4136
 );
 
+.background-image {
+  position: absolute;
+  opacity: 0.04;
+  bottom: -20%;
+  right: 0;
+  width: 80vh;
+  z-index: -2;
+}
+
+
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';

@@ -21,7 +21,7 @@ $ErrorActionPreference = "Stop"
 Function ConfigureApplications {
     <#.Description
         This function creates the Azure AD applications for the sample in the provided Azure AD tenant and updates the
-        configuration files in the client and service project  of the visual studio solution (App.Config and Web.Config)
+        configuration files in the client and service project  of the visual studio solution (Main.Config and Web.Config)
         so that they are consistent with the Applications parameters
     #>
 
