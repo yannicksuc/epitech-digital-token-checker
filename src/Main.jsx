@@ -45,7 +45,17 @@ const ProfileContent = () => {
                     setIncorrectTokenMessage("You already sent a token for this session")
                     return;
                 }
+            } else {
+                const creationDate = new Date().toLocaleString('fr-FR', { timeZone: 'UTC' })
+                setDoc(courseRef, {"creationDate": creationDate},{})
+                    .then(r => {})
+                    .catch(e => {
+                        setValidated(false);
+                        console.log("Transaction failed: ", e)
+                        setCorrectTokenMessage("Transaction failed, contact your pedago for assistance")
+                    })
             }
+            //const creationDate = new Date(doc.createTime._seconds * 1000)
             setDoc(courseRef, {tokens: {[tokenid]: user.email}, "courseid": courseid}, {merge: true})
                 .then(r => {
                     setCorrectTokenMessage("Token successfully sent! 🙌");
